@@ -1,4 +1,4 @@
-# macbook-rice-configs
+# Rice Configs
 
 OS: MacOS Sequoia  
 WM: Yabai  
@@ -8,3 +8,10 @@ Terminal: Kitty
 Shell: oh-my-zsh  
 Prompt Mod: Starship  
 Font: JetBrains Mono from Nerd Font
+
+# Neovim plugins
+
+- Treesitter
+- LSP
+- Telescope & RipGrep via Homebrew
+- 

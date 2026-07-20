@@ -7,11 +7,21 @@ Menu Bar: Simple Bar
 Terminal: Kitty  
 Shell: oh-my-zsh  
 Prompt Mod: Starship  
+Borders: JankyBorders
+Keybinds: SKHD
 Font: JetBrains Mono from Nerd Font
 
 # Neovim plugins
 
-- Treesitter
+- Alpha
+- Autopairs
+- Blink
+- Code Companion
+- Indent Blankline
 - LSP
-- Telescope & RipGrep via Homebrew
-- 
+- Lualine
+- Neo Tree
+- Telescope with RipGrep
+- Treesitter
+- Typescript Tools
+- Web DevIcons

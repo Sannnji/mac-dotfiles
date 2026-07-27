@@ -16,12 +16,15 @@ Font: JetBrains Mono from Nerd Font
 - Alpha
 - Autopairs
 - Blink
+- Bufferline
 - Code Companion
 - Indent Blankline
 - LSP
 - Lualine
 - Neo Tree
+- Render-Markdown
 - Telescope with RipGrep
 - Treesitter
 - Typescript Tools
 - Web DevIcons
+- Which-Key

@@ -1,0 +1,23 @@
+.DS_Store
+
+# Neovim local/cache files
+*.log
+.nvimlog
+
+# Local or secret files
+.env
+.env.*
+*.pem
+*.key
+
+# Machine-specific overrides
+local.lua
+local.conf
+
+# Backup files
+*.bak
+*~
+*.swp
+
+# Claude Code local project settings
+.claude/settings.local.json

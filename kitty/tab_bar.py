@@ -1,0 +1,1 @@
+/Users/jamesji/.config/kitty/python/tab_bar.py

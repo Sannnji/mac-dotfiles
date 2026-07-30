@@ -1,0 +1,13 @@
+# NOTE: alt = option key
+
+# Swap window positions
+alt + shift - w : yabai -m window --swap west
+alt + shift - e : yabai -m window --swap east
+
+# Zoom current window 
+# options: zoom-parent, zoom-fullscreen, native-fullscreen
+alt + shift - z : yabai -m window --toggle zoom-parent
+
+# Resize current window
+alt + shift - a : yabai -m window --resize left:-100:0 || yabai -m window --resize right:-100:0
+alt + shift - d : yabai -m window --resize left:100:0 || yabai -m window --resize right:100:0

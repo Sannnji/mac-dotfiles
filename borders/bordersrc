@@ -1,0 +1,12 @@
+#!/bin/bash
+
+options=(
+	style=round
+	width=6.0
+	hidpi=on
+	active_color=0xff5D536E 
+	inactive_color=0xff343144
+	blacklist="iPhone Mirroring"
+)
+
+borders "${options[@]}"

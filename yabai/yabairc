@@ -64,9 +64,20 @@ yabai -m rule --add app="Discord" manage=off
 yabai -m rule --add app="RuneLite" manage=off
 yabai -m rule --add app="Reminders" manage=off
 yabai -m rule --add app="Notes" manage=off
+yabai -m rule --add app="Github Desktop" manage=off
 
-###############################################################################
-#                               JankyBorders                                  #
-###############################################################################
-
-# borders active_color=0xff5D536E inactive_color=0xff343144 width=6.0 &
+for name in \
+	'Messages' \
+	'System Settings' \
+	'Finder' \
+	'Clock' \
+	'melonDS' \
+	'iPhone Mirroring' \
+	'Discord' \
+	'RuneLite' \
+	'Reminders' \
+	'Notes' \
+	'GitHub Desktop' 
+do
+	yabai -m rule --add app="^${name}$" manage=off
+done

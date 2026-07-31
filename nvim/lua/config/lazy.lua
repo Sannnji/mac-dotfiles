@@ -21,10 +21,11 @@ vim.opt.rtp:prepend(lazypath)
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
--- Setup lazy.nvim
+-- create path to neo-theme
 local neo_theme_path =
   vim.fn.expand('~/Documents/GitHub/neo-theme')
 
+-- Setup lazy.nvim
 require('lazy').setup('plugins', {
   performance = {
     rtp = {

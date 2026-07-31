@@ -12,7 +12,7 @@ return {
 		opts = {
 			-- do not open if in code companion
 			enabled = function()
-				return not vim.tbl_contains({ 'codecompanion' }, vim.bo.filetype)
+				return not vim.tbl_contains({ 'codecompanion', 'markdown' }, vim.bo.filetype)
 			end,
 
 			-- 'default' (recommended) for mappings similar to built-in completions (C-y to accept)

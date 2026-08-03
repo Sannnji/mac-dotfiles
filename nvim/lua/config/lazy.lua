@@ -23,7 +23,7 @@ vim.g.maplocalleader = "\\"
 
 -- create path to neo-theme
 local neo_theme_path =
-  vim.fn.expand('~/Documents/GitHub/neo-theme')
+  vim.fn.expand('~/Documents/GitHub/shibuya')
 
 -- Setup lazy.nvim
 require('lazy').setup('plugins', {

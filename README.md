@@ -2,6 +2,7 @@
 
 OS: MacOS Tahoe 26.5.2  
 WM: Yabai  
+Spotlight: Raycast  
 Widgets: Übersicht  
 Menu Bar: Simple Bar  
 Terminal: Kitty  

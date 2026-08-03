@@ -25,16 +25,9 @@ Font: JetBrains Mono from Nerd Font
 - Neo-Tree
 - Render-Markdown
 - Telescope with RipGrep
+- Toggle-Term
 - Treesitter
 - Typescript Tools
 - Web-DevIcons
 - Which-Key
-
-# Shell
-## Shell
-### Shell
-#### Shell
-##### Shell
-###### Shell
-
 

@@ -6,11 +6,13 @@ return {
 			-- Optional: Provides snippets for the snippet source 
 			'rafamadriz/friendly-snippets',
 		},
+
 		build = function()
 			require('blink.cmp').build:pwait()
 		end,
+
 		opts = {
-			-- do not open if in code companion
+			-- do not open if in code companion and markdown files
 			enabled = function()
 				return not vim.tbl_contains({ 'codecompanion', 'markdown' }, vim.bo.filetype)
 			end,
@@ -27,16 +29,38 @@ return {
 	    --		C-k: Toggle signature help (if signature.enabled = true)
 		  --
 	    -- See :h blink-cmp-config-keymap for defining your own keymap
-			keymap = { 
+			keymap = {
 				preset = 'enter',
 				['<Esc>'] = { 'hide', 'fallback' },
 				['<Tab>'] = { 'select_and_accept', 'snippet_forward', 'fallback' },
 			},
 
-			-- [default]: Only show the documentation popup when manually triggered
 			completion = {
+				keyword = {
+					range = 'prefix',
+				},
+				menu = {
+					border = 'rounded'
+				},
 				documentation = {
-					auto_show = false
+					auto_show = true,
+					window = {
+						border = 'rounded'
+					},
+				},
+			},
+
+			-- ctrl + k to manually show
+			signature = {
+				enabled = true,
+				trigger = {
+					enabled = true, -- auto-show signature
+					show_on_trigger_character = true,
+					show_on_insert_on_trigger_character = true,
+					show_on_insert = true,
+				},
+				window = {
+					border = 'rounded'
 				},
 			},
 

@@ -12,7 +12,7 @@ return {
         border = 'rounded',			-- Border style: 'single', 'double', 'rounded', 'solid'
 				zindex = 50,						-- Base z-index for floating windows (uses zindex to zindex+5)
         position = 'center',		-- Window position: 'right', 'left', 'top', 'bottom', 'center',
-																								 -- 'top-right', 'top-left', 'bottom-right', 'bottom-left'
+																--									'top-right', 'top-left', 'bottom-right', 'bottom-left'
         padding = {
             top = 1,
             bottom = 1,
@@ -25,15 +25,13 @@ return {
 
 			-- Keybinds
 			keymaps = {
-        toggle_window = "<leader>td",          -- Toggle global todos
-        open_project_todo = "<leader>tp",      -- Toggle project-specific todos
-        show_due_notification = "<leader>tn",  -- Show due items window
-        new_todo = "i",
-        create_nested_task = "n",     -- Create nested subtask under current todo
+        toggle_window = "<leader>td",
+        new_todo = "a",
+        create_nested_task = "n",
         toggle_todo = "x",
         delete_todo = "d",
         delete_completed = "D",
-        close_window = "q",
+        close_window = "<Esc>",
         undo_delete = "u",
         add_due_date = "H",
         remove_due_date = "r",

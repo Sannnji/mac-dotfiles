@@ -1,3 +1,18 @@
+local codecompanion_extension = {
+	filetypes = {
+		'codecompanion',
+	},
+
+	sections = {
+		lualine_a = { 'mode' },
+		lualine_b = {},
+		lualine_c = {},
+		lualine_x = { 'filename' },
+		lualine_y = {},
+		lualine_z = {},
+	},
+}
+
 return {
 	{
 		'nvim-lualine/lualine.nvim',
@@ -7,8 +22,8 @@ return {
 				theme = require('shibuya.groups.special.lualine'),
 
 				disabled_filetypes = {
-					statusline = { 'neo-tree', 'codecompanion' },
-					winbar = { 'neo-tree', 'codecompanion' }
+					statusline = { 'neo-tree' },
+					winbar = { 'neo-tree' }
 				},
 
 				section_separators = { left = '', right = '' },
@@ -31,6 +46,10 @@ return {
 				lualine_x = { 'location' },
 				lualine_y = {  },
 				lualine_z = {  }
+			},
+
+			extensions = {
+				codecompanion_extension,
 			},
 		},
 	},

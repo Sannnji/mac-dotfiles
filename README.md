@@ -1,16 +1,20 @@
 # Rice Configs
 
-OS: MacOS Tahoe 26.5.2  
-WM: Yabai  
-Spotlight: Raycast  
-Widgets: Übersicht  
-Menu Bar: Simple Bar  
-Terminal: Kitty  
-Shell: oh-my-zsh  
-Shell Prompt: Starship  
-Borders: JankyBorders  
-Keybinds: SKHD  
-Font: JetBrains Mono from Nerd Font  
+
+| Category | Application |
+| --- | --- |
+| OS | MacOS Tahoe 26.5.2 |
+| WM | Yabai |
+| Spotlight | Raycast |
+| Widgets | Übersicht |
+| Menu Bar | Simple Bar |
+| Terminal | Kitty |
+| Shell | oh-my-zsh |
+| Shell Prompt | Starship |
+| Borders | JankyBorders |
+| Keybinds | SKHD |
+| Font | JetBrains Mono from Nerd Font |
+
 
 # Neovim plugins
 

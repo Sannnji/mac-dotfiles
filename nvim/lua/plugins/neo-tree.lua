@@ -31,7 +31,7 @@ return {
 			require('neo-tree').setup(opts)
 
 			-- Hide cursor in Neo-Tree
-			vim.cmd('highlight NeotreeCursorHide gui=nocombine blend=100')
+			local cursor_hide = require('utils.cursor-hide')
 			local group = vim.api.nvim_create_augroup('NeotreeCursorHide', { clear = true })
 			vim.api.nvim_create_autocmd('FileType', {
 				group = group,
@@ -40,16 +40,12 @@ return {
 					vim.api.nvim_create_autocmd('BufEnter', {
 						group = group,
 						buffer = 0,
-						callback = function()
-							vim.opt.guicursor:append('a:NeotreeCursorHide')
-						end,
+						callback = cursor_hide.hide,
 					})
 					vim.api.nvim_create_autocmd('BufLeave', {
 						group = group,
 						buffer = 0,
-						callback = function()
-							vim.opt.guicursor:remove('a:NeotreeCursorHide')
-						end,
+						callback = cursor_hide.show,
 					})
 				end,
 			})

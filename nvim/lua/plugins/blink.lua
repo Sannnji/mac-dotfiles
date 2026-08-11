@@ -35,6 +35,12 @@ return {
 				['<Tab>'] = { 'select_and_accept', 'snippet_forward', 'fallback' },
 			},
 
+			-- disabled so noice's popupmenu view (native wildmenu) owns
+			-- cmdline completion instead of blink drawing its own competing popup
+			cmdline = {
+				enabled = false
+			},
+
 			completion = {
 				keyword = {
 					range = 'prefix',

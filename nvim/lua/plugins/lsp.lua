@@ -1,44 +1,47 @@
 return {
-  {
-    'neovim/nvim-lspconfig',
-    lazy = false,
+	{
+		'neovim/nvim-lspconfig',
+		lazy = false,
 
-    config = function()
-      vim.lsp.config('lua_ls', {
-        settings = {
-          Lua = {
-            runtime = {
-              version = 'LuaJIT',
-            },
+		config = function()
+			vim.lsp.config('lua_ls', {
+				settings = {
+					Lua = {
+						runtime = {
+							version = 'LuaJIT',
+						},
 
-            diagnostics = {
-              globals = {
-                'vim',
-              },
-            },
-          },
-        },
-      })
+						diagnostics = {
+							globals = {
+								'vim',
+							},
+						},
+					},
+				},
+			})
 
-      vim.lsp.enable({
-        'lua_ls',
-        'pyright',
-      })
+			vim.lsp.enable({
+				'lua_ls',
+				'pyright',
+				'yamlls',
+			})
 
-      vim.keymap.set(
+			vim.keymap.set(
 				'n',
 				'<leader>d',
-        function ()
-					vim.diagnostic.open_float({ focus = false })
+				function()
+					vim.diagnostic.open_float({
+						focus = false,
+					})
 				end,
 				{ desc = 'Diagnostic Float' }
 			)
 
 			vim.diagnostic.config({
 				float = {
-					border = "rounded",
+					border = 'rounded',
 				},
 			})
-    end,
-  },
+		end,
+	},
 }

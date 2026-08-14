@@ -25,9 +25,12 @@
 - Code-Companion
 - Dooing
 - Indent-Blankline
+- LazyGit
 - LSP
 - Lualine
 - Neo-Tree
+- Noice
+- Notify
 - Render-Markdown
 - Telescope with RipGrep
 - Toggle-Term

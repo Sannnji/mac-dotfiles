@@ -24,7 +24,8 @@
 - Autopairs
 - Blink
 - Bufferline (Disabled)
-- Code-Companion
+- Code-Companioin
+- Conform
 - Dooing
 - Indent-Blankline
 - LazyGit

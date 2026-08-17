@@ -1,12 +1,12 @@
 return {
-  {
-    'folke/which-key.nvim',
-    event = 'VeryLazy',
-    opts = {
+	{
+		'folke/which-key.nvim',
+		event = 'VeryLazy',
+		opts = {
 			preset = 'modern',
 			win = {
 				-- border = 'rounded'
-				height = { min = 10, max = 40}
+				height = { min = 10, max = 40 }
 			},
 			layout = {
 				width = {
@@ -17,11 +17,11 @@ return {
 			},
 			spec = {
 				-- General Binds
-				{ '<leader>R', '<cmd>restart<cr>', desc = 'Restart Neovim' },
+				{ '<leader>R',  '<cmd>restart<cr>',              desc = 'Restart Neovim' },
 				-- Hydra Mode Binds
 				{ '<leader>wf', '<cmd>Telescope find_files<cr>', desc = 'Find files' },
 			},
-    },
+		},
 		keys = {
 			{
 				'<leader>w',
@@ -34,5 +34,5 @@ return {
 				desc = 'Hydra Mode',
 			},
 		},
-  },
+	},
 }

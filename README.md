@@ -1,4 +1,4 @@
-![Screenshot] (assets/rice-screenshot.png)
+![Screenshot](assets/rice-screenshot.png)
 
 # Rice Configs
 

@@ -5,13 +5,13 @@ gui:
   # authorColors:
   #   'Jon Doe': 'blue'
   authorColors:
-    'James Ji': '#F38BA8'       # Red
+    "James Ji": "#F38BA8" # C.red
   # You can customize the color of branches based on branch patterns, e.g.:
   #
   # branchColorPatterns:
   #   'feature/.*': 'green'
   branchColorPatterns: {}
-  nerdFontsVersion: '3'
+  nerdFontsVersion: "3"
   scrollPastBottom: false
   # If true, don't give a side panel more height than it needs to show its
   # content; when all panels fit, the leftover height is shared among them so that
@@ -37,11 +37,11 @@ gui:
   commandLogSize: 14
   theme:
     activeBorderColor:
-      - '#B4BEFE'               # lavender
+      - "#B4BEFE" # C.lavender
     inactiveBorderColor:
-      - '#5D536E'               # dusk_violet
+      - "#5D536E" # C.dusk_violet
     optionsTextColor:
-      - '#B4BEFE'               # dusk_violet
+      - "#B4BEFE" # C.dusk_violet
     selectedLineBgColor:
-      - '#5D536E'               # dusk_violet
+      - "#5D536E" # C.dusk_violet
 

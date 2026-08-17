@@ -21,9 +21,8 @@ vim.opt.rtp:prepend(lazypath)
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
--- create path to neo-theme
-local neo_theme_path =
-  vim.fn.expand('~/Documents/GitHub/shibuya')
+-- create path to shibuya theme
+local neo_theme_path = vim.fn.expand('~/Documents/GitHub/shibuya')
 
 -- Setup lazy.nvim
 require('lazy').setup('plugins', {

@@ -25,6 +25,7 @@
 - Blink
 - Bufferline (Disabled)
 - Code-Companioin
+- Colorizer
 - Conform
 - Dooing
 - Indent-Blankline

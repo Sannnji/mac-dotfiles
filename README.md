@@ -39,3 +39,14 @@
 - Web-DevIcons
 - Which-Key
 
+# Intallation
+```bash
+# You can either copy/paste each desired config directory to your ~/.config or symlink them which is my reccomended method
+# Symlink paths will vary based on your setup/OS
+ln -s ~/mac-dotfiles/borders ~/.config/borders
+ln -s ~/mac-dotfiles/lazygit "~/Library/Application Support/lazygit"
+ln -s ~/mac-dotfiles/kitty ~/.config/kitty
+ln -s ~/mac-dotfiles/nvim ~/.config/nvim
+ln -s ~/mac-dotfiles/skhd ~/.config/skhd
+ln -s ~/mac-dotfiles/yabai ~/.config/yabai
+```

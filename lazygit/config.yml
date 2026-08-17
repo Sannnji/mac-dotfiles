@@ -1,0 +1,47 @@
+gui:
+  # Lazygit assigns a random color for every commit author in the commits pane by default
+  # Those can be customized like so:
+  #
+  # authorColors:
+  #   'Jon Doe': 'blue'
+  authorColors:
+    'James Ji': '#F38BA8'       # Red
+  # You can customize the color of branches based on branch patterns, e.g.:
+  #
+  # branchColorPatterns:
+  #   'feature/.*': 'green'
+  branchColorPatterns: {}
+  nerdFontsVersion: '3'
+  scrollPastBottom: false
+  # If true, don't give a side panel more height than it needs to show its
+  # content; when all panels fit, the leftover height is shared among them so that
+  # they still fill the screen.
+  shrinkSidePanelsToContent: true
+  # The side panels, in the order they appear from top to bottom.
+  # Each entry is a list of one or more names that share a single panel as tabs
+  # (cycle through them with the next-tab/previous-tab keys).
+  # Omit a name to hide it; give a name its own one-element list to promote a tab
+  # to a top-level panel.
+  # Valid names are: 'status', 'files', 'worktrees', 'submodules', 'branches',
+  # 'remotes', 'tags', 'commits', 'reflog', 'stash'. 'files', 'branches', and
+  # 'commits' must always be included; they can't be hidden.
+  sidePanels:
+    - [status]
+    - [files, worktrees, submodules]
+    - [branches, remotes, tags]
+    - [commits, reflog]
+    - [stash]
+  # Window border style.
+  # One of 'rounded' (default) | 'single' | 'double' | 'hidden' | 'bold'
+  border: rounded
+  commandLogSize: 14
+  theme:
+    activeBorderColor:
+      - '#B4BEFE'               # lavender
+    inactiveBorderColor:
+      - '#5D536E'               # dusk_violet
+    optionsTextColor:
+      - '#B4BEFE'               # dusk_violet
+    selectedLineBgColor:
+      - '#5D536E'               # dusk_violet
+

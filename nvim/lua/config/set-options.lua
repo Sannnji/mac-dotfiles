@@ -1,4 +1,4 @@
--- Set system clipboard copy to [y] rather than ["+y] 
+-- Set system clipboard copy to [y] rather than ["+y]
 vim.opt.clipboard = 'unnamedplus'
 
 -- Remove ~ for every newline
@@ -12,9 +12,6 @@ vim.opt.shiftwidth = 2
 vim.opt.number = true
 vim.opt.cursorline = true
 vim.opt.cursorlineopt = 'number'
-
--- Allow Neovim to use 24-bit hex colors
-vim.opt.termguicolors = true
 
 -- font color for line numbers
 vim.api.nvim_set_hl(0, 'LineNr', { fg = '#6C7086' })
